@@ -73,8 +73,6 @@ SVDEF bool sv_ends_with(String_View sv, String_View suffix);
 SVDEF uint64_t sv_to_u64(String_View sv);
 uint64_t sv_chop_u64(String_View *sv);
 
-#endif  // SV_H_
-
 #ifdef SV_IMPLEMENTATION
 
 SVDEF String_View sv_from_parts(const char *data, size_t count)
@@ -317,3 +315,4 @@ SVDEF String_View sv_take_left_while(String_View sv, bool (*predicate)(char x))
 }
 
 #endif // SV_IMPLEMENTATION
+#endif // SV_H_
